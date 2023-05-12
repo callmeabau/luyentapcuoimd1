@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function f(x) {
+        if (x >= 5) {
+            f = 2 *  Math.pow(x,2) + 5 * x + 9;
+            return f;
+        } else if (x < 5) {
+            f = -2 * Math.pow(x,2) + 4 * x - 9;
+            return f;
+        }
+    }
+
+    let x1 = prompt("nhap");
+    let kq = f(x1);
+    document.write(kq)
+</script>
+</html>

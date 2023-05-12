@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [2, 4, 8, 16, 32, 64]
+    function findPosition(arr) {
+        for (let i = 1; i < arr.length - 1; i++) {
+            if (arr[i] === arr[i-1] * 2 && arr[i] === arr[i+1] * 2) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    document.write(arr)
+</script>
+</html>

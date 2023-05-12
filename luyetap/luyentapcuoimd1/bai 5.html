@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [-3, -5, -7, -2, -9,9,6]
+    let arr2 = []
+    let a = true
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            arr2.push(arr[i])
+        }
+    }
+    if (a === true) {
+        alert(-1)
+    }
+    let max = arr2[0]
+    for (let j = 0; j < arr2.length; j++) {
+        if (max < arr2[j]) {
+            max = arr2[j]
+        }
+    }
+    console.log(max)
+</script>
+</html>
